@@ -1,0 +1,87 @@
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+input {
+    flex: 1;
+    min-width: 180px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: wait;
+}
+
+#status {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+.result-section {
+    margin-bottom: 24px;
+}
+
+.result-section h2 {
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.result-section ul {
+    padding-left: 24px;
+}
+
+.result-section li {
+    margin-bottom: 5px;
+}
+
+.metadata {
+    overflow-wrap: anywhere;
+}
+
+article {
+    margin-bottom: 30px;
+}
+
+.similar-article {
+    margin: 24px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.similar-article h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.term-group {
+    margin: 12px 0;
+}
+
+.term-group h4 {
+    margin-bottom: 4px;
+}
