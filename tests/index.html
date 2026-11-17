@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PubMed Keyword and MeSH Lookup</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.highcharts.com/highcharts.js" defer></script>
+  <script src="pubmed.js" defer></script>
+</head>
+
+<body>
+  <h1>PubMed Keyword and MeSH Lookup</h1>
+
+  <form id="pubmed-form" novalidate>
+    <label for="pubmed-id">PMID:</label>
+
+    <input
+      type="text"
+      id="pubmed-id"
+      name="pubmedId"
+      placeholder="e.g., 12345678"
+      inputmode="numeric"
+      aria-describedby="status"
+      required
+    >
+
+    <label for="article-scope">Results:</label>
+
+    <select id="article-scope" name="articleScope" aria-describedby="status" required>
+      <option value="" selected disabled>Select an option</option>
+      <option value="0">Single article</option>
+      <option value="5">Including 5 similar articles</option>
+      <option value="10">Including 10 similar articles</option>
+    </select>
+
+    <button type="submit" disabled>Submit</button>
+  </form>
+
+  <p id="status" role="status" aria-live="polite"></p>
+
+  <div id="results"></div>
+</body>
+</html>
